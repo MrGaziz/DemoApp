@@ -13,8 +13,8 @@ import java.util.List;
         private PersonRepository personRepository;
 
         @PostMapping(path="/add") // Map ONLY POST Requests
-        public @ResponseBody String addNewUser (@RequestParam String name, @RequestParam Integer age) {
-            // @ResponseBody means the returned String is the response, not a view name
+        public @ResponseBody String addNewUser (@RequestParam String name, @RequestParam Integer age ) {
+            // @ResponseBody means the returned m Integer aString is the response, not a view name
             // @RequestParam means it is a parameter from the GET or POST request
             Person n = new Person();
             n.setName(name);
